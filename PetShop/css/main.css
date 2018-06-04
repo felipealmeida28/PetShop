@@ -1,0 +1,376 @@
+@font-face{
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-L.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Ubuntu;
+
+}
+
+.container{
+    width: 1135px;
+    margin: 0px auto;
+}
+
+.fixaPrimeiraBarraJS{
+    position: fixed;
+    z-index: 5;
+}
+
+.fixaSegundaBarraJS{
+    position: fixed;
+    top: 1.5em;
+    z-index: 5;
+}
+
+.ativaBufferJS{
+    width: 100%;
+    height: 5.5em;
+    position: relative;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+header div.primeiraBarra{
+    width: 100%;
+    height: 1.5em;
+    background: url('../images/backgroundAzul.jpg')no-repeat;
+    padding: 0.2em;
+    box-sizing: border-box;
+
+}
+
+
+
+header div.primeiraBarra div.eMail{
+    float: left;
+}
+
+header div.primeiraBarra div.telefone{
+    float: right;
+}
+
+header div.primeiraBarra p{
+    color: rgb(10, 9, 0);
+    font-size: small;
+}
+
+.mobileOnly{
+    display: none;
+}
+
+header div.segundaBarra{
+    height: 4em;
+    width: 100%;
+    border-bottom: 1px solid #819FF7;
+    padding: 0.4em;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+
+}
+
+header div.segundaBarra img.logo{
+    width: 100px;
+    height: auto;
+}
+
+
+.navbarPrincipal{
+    display: inline-block;
+    margin-left: 5em;
+
+    position: relative;
+    top: -1.5em;
+
+
+}
+
+.navbarPrincipal ul{
+    list-style: none;
+    text-align: center;
+
+
+
+}
+
+.navbarPrincipal ul li{
+    display: inline;
+    margin: 0 2em;
+}
+
+.navbarPrincipal ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+}
+
+.navbarPrincipal ul li a:hover{
+    color: #a7e7f7;
+    cursor: pointer;
+}
+
+section.desktopBanner{
+    position: relative;
+    width: 100%;
+    height: 40em;
+
+}
+
+section.desktopBanner div.fundoPreto{
+    background-color: black;
+    width: 100%;
+    height: 40em;
+
+}
+
+section.desktopBanner div.bannerBackground{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/imagemBackground_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    background-attachment: fixed;
+}
+
+section.desktopBanner div.bannerFrente{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+
+section.desktopBanner div.bannerFrente div.container{
+    margin: auto;
+}
+
+section.desktopBanner div.bannerFrente div.quadroPrincipal{
+    margin-top: 20em;
+}
+
+section.desktopBanner div.bannerFrente div.quadroPrincipal p{
+    color: gold;
+    font-size: 43px;
+    text-align: center;
+
+}
+
+section.desktopBanner div.bannerFrente div.quadroPrincipal p:nth-of-type(1){
+    margin-bottom: 3em;
+}
+
+
+section.mobileBanner div.bannerFrente{
+    display: none;
+}
+
+
+section.quemSouDesktop{
+
+    background-image: url(../images/backgroundAzul.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30em;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+section.quemSouDesktop > p{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 3em;
+
+}
+
+section.quemSouDesktop div.container{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+section.quemSouDesktop div.container div.itemQuemSouDesktop{
+
+    width: 18em;
+    text-align: justify;
+    padding: 1em;
+    box-sizing: border-box;
+}
+#indexcontato{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+#quemsomos{
+  color: black;
+}
+
+section.quemSouDesktop div.container div.itemQuemSouDesktop p{
+    color: black;
+    font-size: large;
+}
+
+section.quemSouMobile{
+    display: none;
+}
+
+section.clientesDesktop{
+    width: 100%;
+    height: 30em;
+    background-image: url(../images/backgroundAzul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+section.clientesDesktop > div.container > p{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+
+section.clientesDesktop div.quadroBranco{
+
+    width: 50%;
+    margin: auto;
+    height: 22em;
+    background-color:white;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: 2em;
+
+}
+
+
+section.clientesDesktop div.quadroClientesDesktop{
+    width: 80%;
+    margin: auto;
+    height: 17em;
+
+    margin-top: 2em;
+    position: relative;
+
+
+
+}
+
+section.clientesDesktop div.quadroClientesDesktop img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section.clientesDesktop div.quadroClientesDesktop img:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section.clientesDesktop div.quadroClientesDesktop img:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section.clientesDesktop div.quadroClientesDesktop img:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+section.clientesMobile{
+    display: none;
+}
+
+section.serviços{
+    width: 100%;
+    height: 30em;
+    background-image: url(../images/backgroundPreto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+section.serviços > div.container > p:nth-of-type(1){
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+
+section.serviços div#quadroserviços{
+    width: 80%;
+    height: 20em;
+
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+section.serviços div#quadroserviços p{
+    color: white;
+    font-size: larger;
+
+    margin-bottom: 3em;
+    width: 20em;
+    margin-left: 2em;
+
+}
+
+footer div.barraRodape{
+
+    text-align: center;
+    width: 100%;
+    height: 1.0em;
+    background-color: #a7e7f7;
+}
+
+#formulario{
+    
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 195px;
+    text-align: center;
+}
+
+#faleconosco{
+
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.enviar{
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    background-color: #a7e7f7;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+
+

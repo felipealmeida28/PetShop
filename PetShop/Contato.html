@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Contato</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/contato.css">
+
+        <script type="text/javascript" src="javaScript/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="javaScript/owl.carousel.js"></script>
+        <script type="text/javascript" src="javaScript/main.js"></script>
+</head>
+<body>
+	 <header>
+            <div class="primeiraBarra">
+                <div class="container">
+                    <div class="desktopOnly eMail"><b><i><p>contato@petshop.com.br</p><i><b></div>
+                    <div class="desktopOnly telefone"><p>tel: 11 9 1234 5678</p></div>
+                    <div class="mobileOnly eMail"><a href="mailto:contato@petshop.com.br"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></div>
+                    <div class="mobileOnly telefone"><a href="tel:+55 11 91234-4567"><i class="fa fa-phone-square fa-3x"></i></a></div>
+                </div>
+            </div>
+            <div class="bufferMobile"></div>
+            <div class="segundaBarra">
+                <div class="container">
+                    <a href="index.html"><img class="logo" src="images/logo.png" ></a>
+                    <i class="fa fa-bars fa-3x mobileOnly botaoMobile"></i>
+                    <nav class="navbarPrincipal">
+                        <ul>
+                            <li><a href="index.html" id="botaoHome">Home</a></li>
+                            <li><a href="index.html" id="botaoQuemSomos">Quem somos</a></li>
+                            <li><a href="index.html" id="botaoClientes">Clientes</a></li>
+                            <li><a id="serviços">Serviços</a></li>
+                            <li><a href="Contato.html" id="contato">Contato</a></li>
+                            <li><a href="loja.html" id="loja">Nossa Loja</a></li>
+
+                        </ul>
+                    </nav>
+							<h1 id="faleconosco"> Fale Conosco </h1>
+
+                </div>
+            </div>
+
+        </header>
+<form id="formulario"name="formulario" action="Confirmacao.html" method="post">
+	<input type=hidden name="destino" value="petshop@dominio.com">
+		<input type=hidden name="enviado" value="index.html">
+			<p><b>Nome:</b><br>
+				<input type=text required="required" name="nome" size="45" autofocus></p><br>
+					<p><b>Email:</b><br>
+						<input type=email required="required" name="email" size="45"></p><br>
+							<p><b>Assunto:</b><br>
+								<input type=text required="required" name="assunto" size="45"></p><br>
+									<p><b>Mensagem:</b><br>
+						<textarea required="required" name="Mensagem" rows="10" cols="60" wrap="virtual"></textarea></p><br>
+		<p><input class="enviar" type="submit" value="Enviar"> <input class="enviar" type="reset" value="Limpar Formulário"></p>
+</form>
+
+        <footer>
+            <div class="barraRodape"></div>
+        </footer>
+
+</body>
+</html>
